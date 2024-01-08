@@ -59,7 +59,7 @@
     
     
   <link rel="stylesheet" type="text/css" href="/css/post.css" />
-  
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
 
   <meta name="generator" content="Hexo 6.3.0"></head>
   <body>
@@ -198,13 +198,13 @@
 </div>
   <div class="realated__body">
     
-      <div class="null"><div class="null-item"><div class="null-title"><a href="\2024\01\03\记到江苏常州的一次比赛\" title="记到江苏常州的一次比赛" rel="bookmark">记到江苏常州的一次比赛</a></div></div><div class="null-item"><div class="null-title"><a href="\2024\01\05\记平凡的一天\" title="记平凡的一天" rel="bookmark">记平凡的一天</a></div></div><div class="null-item"><div class="null-title"><a href="\2024\01\07\记——曾在居民楼楼底寄存行李的一家\" title="记——曾在居民楼楼底下的一家" rel="bookmark">记——曾在居民楼楼底下的一家</a></div></div><div class="null-item"><div class="null-title"><a href="\2024\01\06\记吃包子时的思考\" title="记吃包子时的思考" rel="bookmark">记吃包子时的思考</a></div></div></div>
+      <div class="null"><div class="null-item"><div class="null-title"><a href="\2024\01\05\记平凡的一天\" title="记平凡的一天" rel="bookmark">记平凡的一天</a></div></div><div class="null-item"><div class="null-title"><a href="\2024\01\03\记到江苏常州的一次比赛\" title="记到江苏常州的一次比赛" rel="bookmark">记到江苏常州的一次比赛</a></div></div><div class="null-item"><div class="null-title"><a href="\2024\01\07\记——曾在居民楼楼底寄存行李的一家\" title="记——曾在居民楼楼底下的一家" rel="bookmark">记——曾在居民楼楼底下的一家</a></div></div><div class="null-item"><div class="null-title"><a href="\2024\01\06\记吃包子时的思考\" title="记吃包子时的思考" rel="bookmark">记吃包子时的思考</a></div></div></div>
     
   </div>
 </div>
 
     
-    
+    <div id="gitalk-container"></div>
   </div>
 
     </div>
@@ -324,7 +324,14 @@
               src="https://www.unpkg.com/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
     
     
-  
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+  const param = JSON.parse('{"enable":true,"owner":"ErMaoZhou","admin":"ErMaoZhou","repo":"ErMaoZhou.github.io","clientID":"Iv1.8f632f4f4b90f2d2","clientSecret":"99052f73979567cd5b9e115bd4d455eccd3aaa7e","labels":"gitalk","distractionFreeMode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN"}')
+  param.id = location.pathname
+  const gitalk = new Gitalk(param)
+  gitalk.render('gitalk-container')
+</script>
+
 
   </body>
 </html>
